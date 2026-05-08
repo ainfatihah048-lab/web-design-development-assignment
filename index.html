@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Muhaini Binti Mat Isa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+  margin: 0;
+}
+
+.header {
+  padding: 80px; 
+  text-align: center; 
+  background: #f76e02; 
+  color: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  overflow: hidden;
+  background-color: #f76e02;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.nav-links a {
+  float: left; 
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none;
+}
+
+.navbar {
+  overflow: hidden; 
+  background-color: #f76e02; 
+  position: sticky; 
+  position: -webkit-sticky; 
+  top: 0;
+}
+
+.navbar a {
+  float: left; 
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #f79101; 
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #f2b104; 
+  color: black;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex; 
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.side { 
+  -ms-flex: 30%;
+  flex: 30%; 
+  background-color: #f1f1f1; 
+  padding: 20px;
+}
+
+.main {
+  -ms-flex: 70%;
+  flex: 70%; 
+  background-color: white; 
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none; 
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html"><img src="C:\Users\thinkpad\Downloads\honey-removebg-preview.png" alt="Honey Logo"></a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="learn.html">Learn</a></li>
+    <li><a href="role.html">Role</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<div class="header">
+  <img src="C:\Users\thinkpad\Downloads\Honey_jar-removebg-preview.png" style="width:100%; height:100%">
+  <h1>Selamat Datang!</h1>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2><a href="about.html">Tentang Saya</a></h2>
+    <h5>Gambar saya:</h5>
+    <img src="C:\Users\thinkpad\OneDrive\Pictures\Owner kedai made 4.jpeg" alt="Owner Kedai Madu" style="width:300px; height:300px; border-radius:50px;">
+    <p>Assalamualaikum dan hai! Saya Muhaini Binti Mat Isa. Penjaga kedai Madu Kelulut MAI HONEY Perlis.</p>
+    <h2><a href="contact.html">Contact</a></h2>
+    <p>NO TEL:</p>
+    <p>011-1547 1796</p>
+    <br>
+    <p>MEDIA SOSIAL:</p>
+    <a href="https://www.facebook.com/MaduKelulutMaiHoney/">FaceBook Perniagaan</a>
+  </div>
+  <div class="main">
+    <h2><a href="role.html">Peranan</a></h2>
+    <p>Peranan yang melibatkan tugasan kerja, sumbangan produk, rutin harian, keistimewaan produk dan harapan saya untuk masa depan.</p>
+    <br>
+    <h2><a href="learn.html">Mari Belajar</a></h2>
+    <p>Mari belajar tentang madu dengan saya!</p>
+    <div class="column">
+      <div class="card">
+        <img src="C:\Users\thinkpad\OneDrive\Pictures\Madu Kelulut.jpg" alt="Madu Kelulut" style="width:100%">
+        <div class="container">
+          <h3 style="text-align:center">Madu Kelulut</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="C:\Users\thinkpad\OneDrive\Pictures\Madu Tualang.jpg" alt="Madu Tualang" style="width:100%">
+        <div class="container">
+          <h3 style="text-align:center">Madu Tualang</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="C:\Users\thinkpad\OneDrive\Pictures\Madu Lebah.jpg" alt="Madu Lebah" style="width:100%">
+        <div class="container">
+          <h3 style="text-align:center">Madu Lebah</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<html>
