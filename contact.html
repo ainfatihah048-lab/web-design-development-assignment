@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Muhaini Binti Mat Isa</title>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  overflow: hidden;
+  background-color: #f76e02;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.nav-links a {
+  float: left; 
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none;
+}
+
+.navbar {
+  overflow: hidden; 
+  background-color: #f76e02; 
+  position: sticky; 
+  position: -webkit-sticky; 
+  top: 0;
+}
+
+.navbar a {
+  float: left; 
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color:#f79101; 
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #f2b104; 
+  color: black;
+}
+
+.button {
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  background-color: #f68002;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: #f59e02;
+}
+
+.button:active {
+  background-color: #f59e02;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #f68002;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #f59e02;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none; 
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html"><img src="C:\Users\thinkpad\Downloads\honey-removebg-preview.png" alt="Honey Logo"></a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="learn.html">Learn</a></li>
+    <li><a href="role.html">Role</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Ruang Interaksi & QnA</h2>
+    <p>Jika ada pertanyaan, tinggalkan mesej:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="C:\Users\thinkpad\OneDrive\Pictures\Kedai MAI HONEY 1.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Nama anda..">
+        <label for="email">E-mel</label>
+        <input type="text" id="email" name="email" placeholder="E-mel anda..">
+        <label for="negeri">Negeri</label>
+        <select id="negeri" name="negeri" name="negeri">
+          <option value="perlis">Perlis</option>
+          <option value="kedah">Kedah</option>
+          <option value="ppinang">Pulau Pinang</option>
+          <option value="perak">Perak</option>
+          <option value="kelantan">Kelantan</option>
+          <option value="terengganu">Terengganu</option>
+          <option value="pahang">Pahang</option>
+          <option value="selangor">Selangor</option>
+          <option value="nsembilan">Negeri Sembilan</option>
+          <option value="melaka">Melaka</option>
+          <option value="johor">Johor</option>
+          <option value="sabah">Sabah</option>
+          <option value="sarawak">Sarawak</option>
+        </select>
+        <label for="subjek">Subjek</label>
+        <textarea id="subjek" name="subjek" placeholder="Tanya sesuatu.." style="height:170px"></textarea>
+        <button class="button"><input type="submit" value="Submit"></button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Muhaini Binti Mat Isa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  overflow: hidden;
+  background-color: #f76e02;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.nav-links a {
+  float: left; 
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none;
+}
+
+.navbar {
+  overflow: hidden; 
+  background-color: #f76e02; 
+  position: sticky; 
+  position: -webkit-sticky; 
+  top: 0;
+}
+
+.navbar a {
+  float: left; 
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color:#f79101; 
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #f2b104; 
+  color: black;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.info-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #f76e02;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border-radius: 16px;
+  background-color: #f68002;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: #f68002;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.5s; 
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  background-color: #f59e02;
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none; 
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html"><img src="C:\Users\thinkpad\Downloads\honey-removebg-preview.png" alt="Honey Logo"></a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="learn.html" class="active">Learn</a></li>
+    <li><a href="role.html">Role</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<div class="info-section">
+  <h1 style="font-size:50px;">Mari Belajar Bersama-Sama!</h1>
+</div>
+
+<h1 style="text-align:center">Jenis-Jenis Madu</h1>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\thinkpad\OneDrive\Pictures\Madu Kelulut.jpg" alt="Madu Kelulut" style="width:100%">
+      <div class="container">
+        <h2 style="text-align:center">Madu Kelulut</h2>
+        <ul>
+          <li>Rasa masam manis</li>
+          <li>Kadar antioksida 4-10 kali ganda lebih tinggi daripada madu tualang dan madu lebah</li>
+          <li>Sumber madu dari bunga air mata pengantin, akasia, bunga kelapa dan pelbagai nektar bunga-bungaan yang kecil</li>
+        </ul>
+        <p><button class="button"><span>Info Lebih</span></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\thinkpad\OneDrive\Pictures\Madu Tualang.jpg" alt="Madu Tualang" style="width:100%">
+      <div class="container">
+        <h2 style="text-align:center">Madu Tualang</h2>
+        <ul>
+          <li>Rasa manis tajam menyengat</li>
+          <li>Kadar antioksida yang tinggi</li>
+          <li>Sumber madu tualang adalah 100% asli dari hasil hutan, iaitu daripada nektar bunga hutan (organik)</li>
+        </ul>
+        <p><button class="button"><span>Info Lebih</span></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\thinkpad\OneDrive\Pictures\Madu Lebah.jpg" alt="Madu Lebah" style="width:100%">
+      <div class="container">
+        <h2 style="text-align:center">Madu Lebah</h2>
+        <ul>
+          <li>Rasa manis biasa</li>
+          <li>Kadar antioksida rendah berbanding madu kelulut dan madu tualang</li>
+          <li>Sumber bunganya (multiflora/uniflora)</li>
+          <li>Sumber makanannya (nektar/embun)</li>
+        </ul>
+        <p><button class="button"><span>Info Lebih</span></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
